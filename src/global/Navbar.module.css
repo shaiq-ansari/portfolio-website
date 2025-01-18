@@ -1,0 +1,145 @@
+/* Navbar Styles */
+.navbar {
+  position: sticky;  /* Makes the navbar sticky */
+  top: 0;           /* Sticks to the top */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  background-color: #24292f;
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 999;     /* Keeps it above all content */
+}
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #61dafb;
+  text-decoration: none;
+}
+
+.navMenu {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  transition: transform 0.3s ease;
+}
+
+.navItem {
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navItem:hover {
+  color: #61dafb;
+}
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+}
+
+.searchInput {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #61dafb;
+  border-radius: 30px;
+  outline: none;
+  background-color: #2c3e50;
+  color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.searchInput::placeholder {
+  color: #aaa;
+}
+
+.searchButton {
+  background-color: #61dafb;
+  border: none;
+  border-radius: 50%;
+  padding: 0.7rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.searchButton:hover {
+  background-color: #4a90e2;
+}
+
+.searchIcon {
+  color: white;
+  font-size: 1.2rem;
+}
+
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.hamburger:hover {
+  color: #61dafb;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .logo {
+    display: none; /* Hide Logo on Small Screens */
+  }
+
+  .navbar {
+    padding: 0.5rem 1rem;
+  }
+
+  .hamburger {
+    display: block;
+    order: 1; /* Leftmost */
+  }
+
+  .searchContainer {
+    order: 3; /* Rightmost */
+  }
+
+  .navMenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    flex-direction: column;
+    background-color: #24292f;
+    gap: 1.5rem;
+    align-items: center;
+    transition: height 0.3s ease;
+  }
+
+  .navMenu.active {
+    height: 200px;
+  }
+
+  .searchInput {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .searchInput {
+    width: 100%;
+  }
+}

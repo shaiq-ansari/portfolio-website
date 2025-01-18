@@ -1,0 +1,163 @@
+/* Footer Styling */
+.footer {
+  background-color: #333; /* Navbar color, adjust if needed */
+  color: #fff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+/* Container for footer content */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Navigation Links Styling */
+.navLinks {
+  display: flex;
+  gap: 20px;
+}
+
+.navLink {
+  color: #fff;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navLink:hover {
+  color: #28a745; /* Green color on hover */
+}
+
+/* Social Media Links Section */
+.socialLinks {
+  display: flex;
+  gap: 20px;
+}
+
+.socialLink {
+  color: #fff;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.socialLink:hover {
+  color: #28a745; /* Green hover effect */
+  transform: scale(1.1);
+}
+
+/* Copyright Text */
+.copyText p {
+  font-size: 1rem;
+  color: #ccc;
+  margin-top: 10px;
+  width: 100%;
+}
+
+/* 🌐 Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .footer {
+    padding: 15px 10px;
+  }
+
+  .navLinks {
+    gap: 15px;
+  }
+
+  .socialLinks {
+    gap: 15px;
+  }
+
+  .socialLink {
+    font-size: 1.4rem;
+  }
+
+  .copyText p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .footer {
+    padding: 15px 10px;
+  }
+
+  .navLinks {
+    gap: 10px;
+  }
+
+  .socialLinks {
+    gap: 10px;
+  }
+
+  .socialLink {
+    font-size: 1.3rem;
+  }
+
+  .copyText p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 10px 5px;
+    flex-direction: column;
+  }
+
+  .navLinks {
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+
+  .socialLinks {
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+
+  .socialLink {
+    font-size: 1.2rem;
+  }
+
+  .copyText p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 10px 5px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navLinks {
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+
+  .socialLinks {
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+
+  .socialLink {
+    font-size: 1.1rem;
+  }
+
+  .copyText p {
+    font-size: 0.7rem;
+  }
+}

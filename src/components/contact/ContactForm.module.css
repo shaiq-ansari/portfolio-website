@@ -1,0 +1,114 @@
+.contactSection {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.heading {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contactForm {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.inputField,
+.textarea {
+  padding: 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  transition: border-color 0.3s ease;
+}
+
+.inputField:focus,
+.textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.textarea {
+  height: 150px;
+  resize: none;
+}
+
+.submitButton {
+  padding: 15px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #0056b3;
+}
+
+.statusMessage {
+  margin-top: 15px;
+  font-size: 1rem;
+  color: #28a745;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .heading {
+    font-size: 2rem;
+  }
+
+  .inputField,
+  .textarea {
+    font-size: 0.9rem;
+    padding: 12px;
+  }
+
+  .submitButton {
+    font-size: 0.9rem;
+    padding: 12px;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+  .heading {
+    font-size: 1.8rem;
+  }
+
+  .contactForm {
+    gap: 10px;
+  }
+
+  .inputField,
+  .textarea {
+    font-size: 0.85rem;
+    padding: 10px;
+  }
+
+  .textarea {
+    height: 120px;
+  }
+
+  .submitButton {
+    font-size: 0.85rem;
+    padding: 10px;
+  }
+}
+
+/* Large Screens */
+@media (min-width: 1200px) {
+  .contactForm {
+    max-width: 700px;
+  }
+}

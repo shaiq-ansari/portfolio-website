@@ -1,0 +1,65 @@
+/* 🌟 Skills Section */
+.skillsSection {
+  padding: 80px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.skillsSection h2 {
+  font-size: 2.8rem;
+  color: #333;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+/* 💼 Skill Card */
+.skillCard {
+  background-color: #fff;
+  width: 150px;
+  height: 150px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skillCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .skillsSection h2 {
+    font-size: 2.2rem;
+  }
+
+  .skillCard {
+    width: 120px;
+    height: 120px;
+  }
+
+  .icon {
+    font-size: 2.5rem;
+  }
+}

@@ -1,0 +1,86 @@
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+/* 🌈 Color Variables */
+:root {
+  --primary-color: #007bff; /* Standard Blue */
+  --primary-hover-color: #0056b3; /* Darker Blue for Hover */
+  --secondary-color: #6c757d; /* Gray for secondary elements */
+  --background-color: #f9f9f9;
+  --text-color: #333;
+}
+
+/* 🌍 Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* 🔘 Button Base Style */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border: none;
+}
+
+/* 🟦 Primary Button */
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover-color);
+  transform: scale(1.05);
+}
+
+/* ⚪ Outline Button */
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.btn-outline:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* ✅ Fiverr Button (Unique) */
+.btn-fiverr {
+  background-color: #1dbf73; /* Fiverr Green */
+  color: #fff;
+}
+
+.btn-fiverr:hover {
+  background-color: #17a66e; /* Darker Fiverr Green */
+  transform: scale(1.05);
+}
+
+/* Adding responsive font scaling */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;  /* Slightly smaller text for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 13px;  /* Even smaller text for very small devices */
+  }
+}

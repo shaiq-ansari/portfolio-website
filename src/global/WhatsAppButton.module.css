@@ -1,0 +1,90 @@
+.whatsappButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  /* font-size: 4.5rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  cursor: pointer;
+  animation: float 3s ease-in-out infinite;
+  transition: transform 0.3s ease;
+}
+
+.whatsappButton:hover {
+  transform: scale(1.2);
+}
+
+.whatsappIcon {
+  color: white;
+  font-size: 3rem;
+}
+
+/* Floating animation */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+
+/* Large Screens (Desktops) */
+@media (min-width: 1025px) {
+  .whatsappButton {
+    width: 90px;
+    height: 90px;
+  }
+  .whatsappIcon {
+    font-size: 3.5rem;
+  }
+}
+
+/* Medium Screens (Tablets) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .whatsappButton {
+    width: 90px;
+    height: 90px;
+  }
+  .whatsappIcon {
+    font-size: 4rem;
+  }
+}
+
+/* Small Screens (Mobiles) */
+@media (max-width: 767px) {
+  .whatsappButton {
+    width: 80px;
+    height: 80px;
+    bottom: 15px;
+    right: 15px;
+  }
+  .whatsappIcon {
+    font-size: 4rem;
+  }
+}
+
+/* Extra Small Screens */
+@media (max-width: 480px) {
+  .whatsappButton {
+    width: 80px;
+    height: 80px;
+    bottom: 10px;
+    right: 10px;
+  }
+  .whatsappIcon {
+    font-size: 4rem;
+  }
+}

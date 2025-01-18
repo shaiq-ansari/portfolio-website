@@ -1,0 +1,235 @@
+/* Section Styling */
+.testimonialsSection {
+  padding: 1.2rem 2rem;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+/* Heading */
+.heading {
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Carousel Container */
+.carouselContainer {
+  padding: 0 2rem;
+}
+
+/* Testimonial Card */
+.testimonialCard {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin: 1rem;
+  transition: transform 0.3s ease-in-out;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.testimonialCard:hover {
+  transform: translateY(-10px);
+}
+
+/* Client Info */
+.clientHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.clientImage {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1rem;
+  border: 2px solid #007bff;
+}
+
+.clientName {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Country Info */
+.countryInfo {
+  display: flex;
+  align-items: center;
+  margin-top: 0.2rem;
+}
+
+.countryFlag {
+  width: 20px;
+  height: 15px;
+  margin-right: 6px;
+  border-radius: 3px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Review */
+.review {
+  font-style: italic;
+  font-size: 1rem;
+  color: #555;
+  margin: 1.2rem 0;
+  line-height: 1.6;
+}
+
+/* Rating Stars */
+.rating span {
+  color: #ffc107;
+  font-size: 1.3rem;
+}
+
+/* Fiverr Button */
+.fiverrButton {
+  margin-top: 2rem;
+  padding: 0.8rem 2.5rem;
+  background-color: #1dbf73;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.fiverrButton:hover {
+  background-color: #17a35c;
+}
+
+/* ========================== */
+/*      FULL RESPONSIVENESS   */
+/* ========================== */
+
+/* Large Screens (1440px and above) */
+@media (max-width: 1440px) {
+  .testimonialCard {
+    padding: 1.8rem;
+  }
+
+  .clientImage {
+    width: 65px;
+    height: 65px;
+  }
+
+  .heading {
+    font-size: 2.6rem;
+  }
+}
+
+/* Laptops (1024px - 1439px) */
+@media (max-width: 1024px) {
+  .carouselContainer {
+    padding: 0 1.5rem;
+  }
+
+  .testimonialCard {
+    padding: 1.5rem;
+  }
+
+  .clientImage {
+    width: 60px;
+    height: 60px;
+  }
+
+  .heading {
+    font-size: 2.4rem;
+  }
+
+  .review {
+    font-size: 0.95rem;
+  }
+}
+
+/* Tablets (768px - 1023px) */
+@media (max-width: 768px) {
+  .carouselContainer {
+    padding: 0 1rem;
+  }
+
+  .testimonialCard {
+    padding: 1.2rem;
+  }
+
+  .clientHeader {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .clientImage {
+    width: 55px;
+    height: 55px;
+    margin-bottom: 0.5rem;
+  }
+
+  .clientName {
+    font-size: 1.2rem;
+  }
+
+  .review {
+    font-size: 0.9rem;
+  }
+
+  .fiverrButton {
+    width: 70%;
+    padding: 0.7rem 1.5rem;
+  }
+}
+
+/* Mobile Devices (480px - 767px) */
+@media (max-width: 480px) {
+  .testimonialCard {
+    padding: 1rem;
+  }
+
+  .clientImage {
+    width: 50px;
+    height: 50px;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .review {
+    font-size: 0.85rem;
+  }
+
+  .fiverrButton {
+    width: 90%;
+    font-size: 1rem;
+  }
+}
+
+/* Extra Small Devices (320px - 479px) */
+@media (max-width: 320px) {
+  .testimonialCard {
+    padding: 0.8rem;
+  }
+
+  .clientImage {
+    width: 45px;
+    height: 45px;
+  }
+
+  .heading {
+    font-size: 1.8rem;
+  }
+
+  .review {
+    font-size: 0.8rem;
+  }
+
+  .fiverrButton {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+}

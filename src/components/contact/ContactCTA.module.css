@@ -1,0 +1,96 @@
+.ctaSection {
+  background-color: #f4f4f4;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.ctaContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ctaHeading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.ctaText {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.ctaButtons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.ctaButtonPrimary {
+  background-color: #007bff;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+.ctaButtonPrimary:hover {
+  background-color: #0056b3;
+}
+
+.ctaButtonSecondary {
+  background-color: #28a745;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+.ctaButtonSecondary:hover {
+  background-color: #218838;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 768px) {
+  .ctaHeading {
+    font-size: 2rem;
+  }
+
+  .ctaText {
+    font-size: 1rem;
+  }
+
+  .ctaButtons {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .ctaButtonPrimary, .ctaButtonSecondary {
+    width: 100%;
+    padding: 12px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ctaHeading {
+    font-size: 1.6rem;
+  }
+
+  .ctaText {
+    font-size: 0.9rem;
+  }
+
+  .ctaButtonPrimary, .ctaButtonSecondary {
+    font-size: 1rem;
+  }
+}

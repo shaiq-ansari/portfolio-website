@@ -1,0 +1,101 @@
+/* 🌟 Overall Section Styling */
+.projectOverview {
+  background-color: #f4f4f8; /* Soft background for a clean look */
+  padding: 100px 20px;
+  text-align: center;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ✨ Heading Styling */
+.heading {
+  font-size: 2.8rem;
+  color: #1e3050; /* Dark blue for contrast */
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* 📝 Description Styling */
+.description {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  line-height: 1.6;
+}
+
+/* 🔗 Call to Action Button */
+.ctaButton {
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff; /* Primary button color */
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.ctaButton:hover {
+  background-color: #0056b3; /* Darker on hover */
+  transform: scale(1.05);
+}
+
+/* 💻 Icon Styling */
+.icon {
+  font-size: 2rem;
+  color: #007bff;
+}
+
+/* ✨ Fade-in Animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 🌐 Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .heading {
+    font-size: 2.2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    padding: 0 20px;
+  }
+
+  .ctaButton {
+    padding: 10px 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 1.8rem;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .description {
+    font-size: 0.95rem;
+  }
+
+  .ctaButton {
+    width: 100%;
+    padding: 12px;
+  }
+}

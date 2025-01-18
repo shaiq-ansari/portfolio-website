@@ -1,0 +1,171 @@
+/* 📦 Contact Section Container */
+.contactSection {
+  background-color: var(--background-color);
+  padding: 2.5rem 1.25rem;
+  text-align: center;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* 📝 Heading and Description */
+.heading {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: var(--secondary-color);
+  margin-bottom: 40px;
+}
+
+
+/* 📘 Buttons Styling with Icon Space */
+.contactButtons a {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adds space between icon and text */
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* 🎯 Email Button */
+.contactButtons .btn-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.contactButtons .btn-primary:hover {
+  background-color: var(--primary-hover-color);
+  transform: scale(1.05);
+}
+
+/* 📞 Call Button */
+.contactButtons .btn-outline {
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.contactButtons .btn-outline:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+  transform: scale(1.05);
+}
+
+
+
+/* 🔘 Button Alignment */
+.contactButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ✅ Standard Button Styling */
+.contactBtn,
+.contactBtnOutline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+}
+
+/* 🟦 Solid Button (Primary) */
+.contactBtn {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.contactBtn:hover {
+  background-color: var(--primary-hover-color);
+  transform: scale(1.05);
+}
+
+/* ⚪ Outline Button */
+.contactBtnOutline {
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  background-color: transparent;
+}
+
+.contactBtnOutline:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* ✅ Fiverr Button (Unique) */
+.fiverrLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #1dbf73; /* Fiverr Green */
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.fiverrLink:hover {
+  background-color: #17a66e; /* Darker Fiverr Green */
+  transform: scale(1.05);
+}
+
+/* 📝 Contact Note */
+.note {
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* 📷 Icon Styling */
+.icon {
+  font-size: 1.2rem;
+}
+
+/* 🌐 Media Queries for Responsiveness */
+@media (min-width: 600px) {
+  .contactButtons {
+    flex-direction: row;
+  }
+
+  .contactBtn,
+  .contactBtnOutline {
+    width: auto;
+  }
+}
+
+@media (max-width: 599px) {
+  .heading {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .contactBtn,
+  .contactBtnOutline {
+    width: 100%;
+    justify-content: center;
+  }
+}

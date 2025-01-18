@@ -1,0 +1,94 @@
+.ctaSection {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #fff;
+  padding: 80px 40px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  margin: 60px auto;
+  width: 90%;
+  max-width: 1000px;
+  transition: transform 0.3s ease;
+}
+
+.ctaSection:hover {
+  transform: translateY(-5px);
+}
+
+.content h2 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.content p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  opacity: 0.9;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.hireButton, .portfolioButton, .resumeButton {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hireButton {
+  background-color: #ff6363;
+  color: #fff;
+}
+
+.hireButton:hover {
+  background-color: #ff4949;
+  transform: scale(1.05);
+}
+
+.portfolioButton {
+  background-color: #00bcd4;
+  color: #fff;
+}
+
+.portfolioButton:hover {
+  background-color: #0097a7;
+  transform: scale(1.05);
+}
+
+.resumeButton {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.resumeButton:hover {
+  background-color: #388e3c;
+  transform: scale(1.05);
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .content h2 {
+    font-size: 2rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+  }
+
+  .hireButton, .portfolioButton, .resumeButton {
+    padding: 12px 25px;
+    font-size: 0.9rem;
+  }
+}
