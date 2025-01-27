@@ -11,10 +11,10 @@ const ContactForm = () => {
 
     emailjs
       .sendForm(
-        process.env.REACT_APP_EMAILJS_SERVICE_ID,      // Using environment variable
-        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,     // Using environment variable
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,      // Updated with Vite environment variable
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,     // Updated with Vite environment variable
         form.current,
-        process.env.REACT_APP_EMAILJS_PUBLIC_KEY       // Using environment variable
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY       // Updated with Vite environment variable
       )
       .then(
         (result) => {
