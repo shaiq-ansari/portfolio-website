@@ -104,6 +104,7 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  margin: 10px;
   background-color: transparent;
   border: 2px solid var(--primary-color);
   color: var(--primary-color);
@@ -115,6 +116,24 @@
 .activePage {
   background-color: var(--primary-color);
   color: #fff;
+}
+
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  /* Ensure at least 3 columns are always visible */
+  gap: 25px;
+}
+
+@media (max-width: 768px) {
+  .projectGrid {
+    grid-template-columns: repeat(2, 1fr);  /* Ensure 2 columns on medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .projectGrid {
+    grid-template-columns: 1fr;  /* Ensure 1 column on smaller screens */
+  }
 }
 
 
