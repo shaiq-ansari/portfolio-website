@@ -43,7 +43,7 @@ const projectData = [
     category: "React",
     technologies: ['HTML', "CSS", "JavaScript", "React", "Bootstrap"],
     imageUrl: '/projects/text-app.webp',
-    liveLink: 'https://text-utilities-by-shaiq.netlify.app/',
+    liveLink: 'https://text-utility-app-shaiq.netlify.app/',
   },
   {
     id: 5,
